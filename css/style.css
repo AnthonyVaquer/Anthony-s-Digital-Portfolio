@@ -115,7 +115,26 @@ header h1 {
   margin: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-about-me-img {
+  background-image: url("Images/IMG_3103.PNG");
+  background-size: 100%;
+  width: 150px;
+  height: 250px;
+}
+
+.page-about-me h1 {
+  order: -1;
+}
+
+.page-about-me p {
+  text-align: center;
+  padding: 0 10%;
 }
 
 .page-projects {
@@ -141,7 +160,7 @@ header h1 {
 .project-calorie-tracker {
   margin-left: 20px;
   margin-right: 20px;
-  background-image: url("Images/weather-updates.png");
+  background-image: url("Images/calorietracker.png");
   background-size: 60%;
   background-position: center;
   background-blend-mode: soft-light;
@@ -155,9 +174,21 @@ header h1 {
   position: relative;
 }
 
+.project-calorie-tracker span {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
+}
+
 .project-pet-care-tracker {
   margin-right: 20px;
-  background-image: url("Images/weather-updates.png");
+  background-image: url("Images/petcare.jpg");
   background-size: 60%;
   background-position: center;
   background-blend-mode: soft-light;
@@ -168,11 +199,24 @@ header h1 {
   flex-direction: row;
   font-size: 25px;
   text-align: center;
+  position: relative;
+}
+
+.project-pet-care-tracker span {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
 }
 
 .project-sports-updates {
   margin-right: 20px;
-  background-image: url("Images/weather-updates.png");
+  background-image: url("Images/sportsnews.jpg");
   background-size: 60%;
   background-position: center;
   background-blend-mode: soft-light;
@@ -183,6 +227,19 @@ header h1 {
   flex-direction: row;
   font-size: 25px;
   text-align: center;
+  position: relative;
+}
+
+.project-sports-updates span {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
 }
 
 .project-weather-report {
@@ -197,6 +254,19 @@ header h1 {
   flex-direction: row;
   text-align: center;
   margin-right: 20px;
+  position: relative;
+}
+
+.project-weather-report span {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
 }
 
 .page-contact {
@@ -216,23 +286,3 @@ header h1 {
   border-color: var(--Black);
   margin: 20px;
 }
-/* 
-@media (max-width: 600px) {
-  .page-nav {
-    flex-direction: column;
-    word-spacing: 10px;
-  }
-
-  .aboutme,
-  .projects,
-  .resume,
-  .contact {
-    font-size: 18px;
-    padding: 8px;
-  }
-
-  .project {
-    font-size: 20px;
-    padding: 2%;
-  }
-} */
