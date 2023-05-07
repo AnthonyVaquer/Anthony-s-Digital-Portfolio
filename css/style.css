@@ -1,173 +1,238 @@
 :root {
-    --Black: rgb(0, 0, 0);
-    --Grey: rgb(93, 93, 93);
-    --Blue: rgb(34, 47, 91);
-    --DarkBlue: rgb(14, 26, 64);
-    --White: rgb(239, 240, 244);
-    --Tan: rgb(148, 107, 45);
+  --Black: rgb(0, 0, 0);
+  --Grey: rgb(93, 93, 93);
+  --Blue: rgb(34, 47, 91);
+  --DarkBlue: rgb(14, 26, 64);
+  --White: rgb(239, 240, 244);
+  --Tan: rgb(148, 107, 45);
+}
+
+.page-background {
+  background-color: var(--White);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-padding: 10px 10px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-color: var(--Tan);
-background-color: var(--DarkBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--White);
+  border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  margin: 20px;
 }
 
 header h1 {
-background-color: var(--Black);
-padding: 5px 1% 5px 6%;
-margin: 0;
+  background-color: rgb(70, 94, 154);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  margin: 20px;
 }
 
 .page-nav {
-flex-direction: row;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-text-align: center;
-padding: 10px;
-word-spacing: 40px;
-color: var(--Tan);
-font-size: 24px;
-font-family: "Lucida Console", "Courier New", monospace;
-background-color: var(--DarkBlue);
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  word-spacing: 40px;
+  color: var(--White);
+  font-size: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgb(70, 94, 154);
+  border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  margin: 20px;
 }
 
 .aboutme {
-border-width: 3px;
-border-style: solid;
-border-color: var(--Black);
-border-radius: 2px;
-color: var(--Tan);
-background-color: var(--Black);
-border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  border-radius: 2px;
+  color: var(--White);
+  background-color: var(--Black);
+  border-radius: 15px 15px;
 }
 
 .projects {
-border-width: 3px;
-border-style: solid;
-border-color: var(--Black);
-border-radius: 2px;
-color: var(--Tan);
-background-color: var(--Black);
-border-radius: 15px 15px;
+  margin-bottom: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  border-radius: 2px;
+  color: var(--White);
+  background-color: var(--Black);
+  border-radius: 15px 15px;
 }
 
 .resume {
-border-width: 3px;
-border-style: solid;
-border-color: var(--Black);
-border-radius: 2px;
-color: var(--Tan);
-background-color: var(--Black);
-border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  border-radius: 2px;
+  color: var(--White);
+  background-color: var(--Black);
+  border-radius: 15px 15px;
 }
 
 .contact {
-border-width: 3px;
-border-style: solid;
-border-color: var(--Black);
-border-radius: 2px;
-color: var(--Tan);
-background-color: var(--Black);
-border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  border-radius: 2px;
+  color: var(--White);
+  background-color: var(--Black);
+  border-radius: 15px 15px;
 }
 
 .page-about-me {
-font-size: 22px;
-text-align: center;
-background-color: var(--Blue);
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  border-radius: 2px;
+  color: var(--White);
+  background-color: rgb(70, 94, 154);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
 }
 
 .page-projects {
-font-size: 22px;
-text-align: center;
-background-color: var(--Blue);
+  font-size: 22px;
+  text-align: center;
+  background-color: rgb(70, 94, 154);
+  color: var(--White);
+  border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  margin: 20px;
 }
 
 .flex-container {
-display: flex;
-flex-direction: row;
-vertical-align: middle;
-justify-content: space-between;
-text-align: center;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .project-calorie-tracker {
-background-image: url("weather-updates.png");
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-min-height: 40vh;
-color: var(--Black);
-padding: 2% 6%;
-display: flex;
-flex-direction: row;
-text-align: center;
-font-size: 25px;
-position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url("Images/weather-updates.png");
+  background-size: 60%;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 40vh;
+  color: var(--Black);
+  padding: 2% 6%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
 }
 
 .project-pet-care-tracker {
-background-image: url("weather-updates.png");
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-min-height: 40vh;
-color: var(--Black);
-padding: 2% 6%;
-display: flex;
-flex-direction: row;
-font-size: 25px;
-text-align: center;
+  margin-right: 20px;
+  background-image: url("Images/weather-updates.png");
+  background-size: 60%;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 40vh;
+  color: var(--Black);
+  padding: 2% 6%;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  text-align: center;
 }
 
 .project-sports-updates {
-background-image: url("weather-updates.png");
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-min-height: 40vh;
-color: var(--Black);
-padding: 2% 6%;
-display: flex;
-flex-direction: row;
-font-size: 25px;
-text-align: center;
+  margin-right: 20px;
+  background-image: url("Images/weather-updates.png");
+  background-size: 60%;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 40vh;
+  color: var(--Black);
+  padding: 2% 6%;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  text-align: center;
 }
 
-.project-weather-report{
-background-image: url("weather-updates.png");
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-min-height: 40vh;
-color: var(--Black);
-padding: 2% 6%;
-display: flex;
-flex-direction: row;
-text-align: center;
+.project-weather-report {
+  background-image: url("Images/weather-updates.png");
+  background-size: 60%;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 40vh;
+  color: var(--Black);
+  padding: 2% 6%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-right: 20px;
 }
 
 .page-contact {
-background-color: var(--DarkBlue);
-flex-direction: row;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-text-align: center;
-word-spacing: 40px;
-font-size: 22px;
-color: var(--Black);
-font-family: "Lucida Console", "Courier New", monospace;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  word-spacing: 40px;
+  font-size: 18px;
+  color: var(--White);
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgb(70, 94, 154);
+  border-radius: 15px 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Black);
+  margin: 20px;
 }
+/* 
+@media (max-width: 600px) {
+  .page-nav {
+    flex-direction: column;
+    word-spacing: 10px;
+  }
+
+  .aboutme,
+  .projects,
+  .resume,
+  .contact {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .project {
+    font-size: 20px;
+    padding: 2%;
+  }
+} */
